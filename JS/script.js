@@ -2,18 +2,18 @@ function toggleMode() {
   const html = document.documentElement
   const img = document.querySelector("#profile img")
 
-  html.classList.toggle("ligth")
+  html.classList.toggle("light")
 
-  if (html.classList.contains("ligth")) {
-    img.setAttribute("src", "/assets/avatar-light.png")
+  if (html.classList.contains("light")) {
+    img.setAttribute("src", "../assets/avatar-light.png")
   } else {
-    img.setAttribute("src", "/assets/avatar.png")
+    img.setAttribute("src", "../assets/avatar.png")
   }
 
-  if (html.classList.contains("ligth")) {
+  if (html.classList.contains("light")) {
     img.setAttribute(
       "alt",
-      "Foto de Perfil de Mateus Dias Camacho, cantando com terno preto, camisa preta, de óculos, barba, careca, com microfone na mão"
+      "Foto de Perfil de Mateus Dias Camacho"
     )
   } else {
     img.setAttribute(
@@ -21,6 +21,4 @@ function toggleMode() {
       "Foto de Perfil de Mateus Dias Camacho, sorrindo, usando headphones, camisa preta, barba e fundo branco"
     )
   }
-
-
 }
