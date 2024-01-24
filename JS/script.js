@@ -13,12 +13,12 @@ function toggleMode() {
   if (html.classList.contains("light")) {
     img.setAttribute(
       "alt",
-      "Foto de Perfil de Mateus Dias Camacho"
+      "Foto de Perfil de Mateus Dias Camacho, sorrindo, usando headphones, camisa preta, barba e fundo azul"
     )
   } else {
     img.setAttribute(
       "alt",
-      "Foto de Perfil de Mateus Dias Camacho, sorrindo, usando headphones, camisa preta, barba e fundo branco"
+      "Foto de Perfil de Mateus Dias Camacho, sorrindo, usando headphones, camisa preta, barba e fundo laranja"
     )
   }
 }
