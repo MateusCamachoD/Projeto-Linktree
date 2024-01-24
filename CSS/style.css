@@ -74,12 +74,16 @@ body * {
   position: absolute;
   border-radius: 50%;
   transform: translateY(-50%);
+  animation: slide-out 0.6s;
   background: white var(--switch-bg-url) no-repeat center;
 }
 
 .ligth #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.6s forwards;
+}
+
+#switch button:hover{
+  outline: 4px solid var(--highlight-color);
 }
 
 #switch span {
@@ -155,5 +159,24 @@ footer {
 
   .ligth{
     --bg-url: url(/assets/background-ligth.jpg)
+  }
+}
+
+/* animation*/
+@keyframes slide-in{
+  from {
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+
+@keyframes slide-out{
+  from{
+    left:50%;
+  }
+  to{
+    left: 0%;
   }
 }
